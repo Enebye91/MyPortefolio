@@ -1,4 +1,4 @@
-import "../src/assets/Paragraf.css";
+import "../assets/Paragraf.css";
 
 export default function Paragraf(props) {
   return (
@@ -9,5 +9,3 @@ export default function Paragraf(props) {
     </>
   );
 }
-
-

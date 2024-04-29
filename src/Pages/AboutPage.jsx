@@ -1,9 +1,8 @@
 import Nav from "../Components/NavBar";
 // import Navigation from "../Components/Nav";
-import "../src/assets/About.css";
+import "../assets/About.css";
 import OverskriftTo from "../Components/OverskriftTo";
 import ExtendText from "../Components/ExtendText";
-
 
 export default function About() {
   return (

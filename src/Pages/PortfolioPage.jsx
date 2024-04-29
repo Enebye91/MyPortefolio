@@ -1,11 +1,11 @@
 import Navigation from "../Components/Nav";
 import Paragraf from "../Components/Paragraf";
-import rightarrow from "../src/images/rightarrow.png";
+import rightarrow from "../assets/images/rightarrow.png";
 import ContactSection from "../Components/ContactSection";
 import Footer from "../Components/Footer";
-import Stald from "../src/images/StaldS.png";
+import Stald from "../assets/images/StaldS.png";
 // import { Link } from "react-router-dom";
-import "../src/assets/PortfolioPage.css";
+import "../assets/PortfolioPage.css";
 
 export default function Portfolio() {
   const numRows = 2;
@@ -51,11 +51,11 @@ export default function Portfolio() {
   // Tekst til at indsætte i kasserne
   const texts = [
     [<Paragraf paragraf="Stald Schwartz " />, "1"],
-    [<Paragraf paragraf=" " />, "2"],
+    [<Paragraf paragraf=" " />, "2"]
   ];
 
   const imagePaths = [
-    Stald,
+    Stald
     // Tilføj flere billedstier efter behov
   ];
 

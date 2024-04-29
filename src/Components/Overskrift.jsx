@@ -1,4 +1,4 @@
-import "../src/assets/Overskrift.css";
+import "../assets/Overskrift.css";
 
 export default function Overskrift(props) {
   return (

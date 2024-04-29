@@ -3,7 +3,7 @@ import TextAnimation from "../Components/TextAnimation";
 // import Mijo from "../src/images/Mijo.png";
 import CircleButton from "../Components/CircleWithSection";
 import Paragraf from "../Components/Paragraf";
-import "../src/assets/Landingpage.css";
+import "../assets/Landingpage.css";
 import Overskrift from "../Components/Overskrift";
 
 export default function LandingPage() {

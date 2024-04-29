@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../src/assets/CircleButton.css";
+import "../assets/CircleButton.css";
 
 // import flower from "../src/images/flower.svg";
 // import Footer from "../Components/Footer";
@@ -47,8 +47,6 @@ function SectionToShow({ sectionRef }) {
             <li>
               <Link to="About">
                 <div style={{ display: "flex", alignItems: "center" }}>
-                 
-
                   <div className="contact-text">About</div>
                 </div>
               </Link>
@@ -60,8 +58,6 @@ function SectionToShow({ sectionRef }) {
             <li>
               <Link to="Portfolio">
                 <div style={{ display: "flex", alignItems: "center" }}>
-                  
-
                   <div className="contact-text">Portfolio</div>
                 </div>
               </Link>

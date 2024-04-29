@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../src/assets/Nav.css";
+import "../assets/Nav.css";
 import { useState } from "react";
 
 export default function Nav() {
@@ -21,13 +21,13 @@ export default function Nav() {
         <img src="" alt="" className="logo" />
         <ul className={active}>
           <li>
-            <Link to="/About">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/Portfolio">Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           {/* <li>
-            <Link to="contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li> */}
         </ul>
 

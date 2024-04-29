@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../src/assets/NavBar.css";
+import "../assets/NavBar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,25 +25,24 @@ const Navbar = () => {
       <div className={`links ${menuOpen ? "menu-open" : ""}`}>
         <ul>
           <li>
-            <Link to="" style={{ "--i": "0.05s" }} onClick={toggleMenu}>
+            <Link to="/" style={{ "--i": "0.05s" }} onClick={toggleMenu}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/About" style={{ "--i": "0.10s" }} onClick={toggleMenu}>
+            <Link to="/about" style={{ "--i": "0.10s" }} onClick={toggleMenu}>
               About
             </Link>
           </li>
           <li>
             <Link
-              to="/Portfolio"
+              to="/portfolio"
               style={{ "--i": "0.15s" }}
-              onClick={toggleMenu}
-            >
+              onClick={toggleMenu}>
               Portfolio
             </Link>
             <li>
-              <Link to="Case" style={{ "--i": "0.10s" }} onClick={toggleMenu}>
+              <Link to="/cases" style={{ "--i": "0.10s" }} onClick={toggleMenu}>
                 Cases
               </Link>
             </li>
