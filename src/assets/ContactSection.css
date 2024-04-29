@@ -1,0 +1,220 @@
+.c_box button:hover {
+  animation: animate 0.6s;
+}
+
+@keyframes animate {
+  25% {
+    transform: scale(0.8, 1.3);
+  }
+
+  50% {
+    transform: scale(1.1, 0.8);
+  }
+}
+
+.c_box button.expanded {
+  animation: jellyEffect 0.3s ease; /* Tilføj geléeffekt-animation, når cirklen klikkes */
+}
+
+@keyframes jellyEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* General styles */
+.Hit_up {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8% 0% 0% 10%;
+  background-color: var(--DarkGreen);
+}
+
+.ekstra_wrapper {
+  width: 100%;
+  display: flex;
+}
+
+/* Specific container styles */
+.ekstra_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portraet_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+/* Contact section */
+.c_container {
+  width: 100%;
+  padding: 0% 0% 8% 0%;
+}
+
+.c_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2%;
+}
+
+.second_header {
+  text-align: left;
+  padding: 0% 0% 4% 1%;
+}
+
+/* Container children */
+.portraet_contain {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+#selv {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Contact button */
+.kontact {
+  margin-bottom: 10px;
+  border-radius: 50px;
+  background-color: var(--LightGreen);
+  color: var(--cream);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  height: 6vh; /* Juster efter behov */
+}
+
+.kontact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Media queries */
+@media screen and (min-width: 402px) {
+  .c_box {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .kontact {
+    max-width: 175px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Hit_up {
+    width: 100%;
+    padding: 8% 0% 0% 4%;
+  }
+
+  .ekstra_container {
+    width: 50%;
+    flex-direction: row;
+  }
+
+  .c_container {
+    width: 85%;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .c_box {
+    flex-direction: row;
+  }
+
+  .second_header {
+    padding: 0% 0% 2% 1%;
+  }
+
+  .portraet_contain {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
+
+  .kontakt_contain {
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+  }
+
+  .kontact {
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Hit_up {
+    width: 100%;
+    padding: 6% 0% 0% 12%;
+    display: flex;
+  }
+
+  /* .portraet_wrap {
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  .ekstra_container {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .contact_contain {
+    width: 65%;
+    height: 100%;
+  }
+
+  .portraet_contain {
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+  }
+
+  #image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .kontact {
+    height: 6vh;
+    max-width: 200px;
+  }
+
+  .c_container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+
+  .Hit_up {
+   
+    padding: 4% 10% 0% 15%;
+  }
+
+}

@@ -1,0 +1,32 @@
+h2 {
+  color: var(--cream);
+  font-size: 24px;
+  /* font-size: clamp(2.5rem, 6rem, 5rem); */
+}
+
+.overskriftTo-container {
+  opacity: 0; /* Start med at skjule overskriften */
+  transition: opacity 0.5s ease; /* Animer opacity-egenskaben */
+}
+
+.overskriftTo-container.fade-in {
+  opacity: 1; /* Vis overskriften med fuld opacity */
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  h2 {
+    font-size: 35px;
+  }
+}

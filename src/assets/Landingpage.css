@@ -1,0 +1,125 @@
+/* .Hero_btn:hover {
+  animation: animate 0.6s;
+}
+
+@keyframes animate {
+  25% {
+    transform: scale(0.8, 1.3);
+  }
+
+  50% {
+    transform: scale(1.1, 0.8);
+  }
+}
+
+.Hero_btn.expanded {
+  animation: jellyEffect 0.3s ease;
+}
+
+@keyframes jellyEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+/* Hero */
+.Hero {
+  /* background-color: #080838; */
+  /* background: linear-gradient(45deg, #080838, #0f0241); */
+  /* background: linear-gradient(45deg, #233c40, #28393b); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  position: relative;
+}
+
+.Hero_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.taleboble {
+  position: relative;
+  background: #233c40;
+  border: 2px solid #233c40;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  min-width: 25%;
+}
+
+.taleboble::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent#233c40 transparent transparent;
+}
+
+.job_container {
+  letter-spacing: 2px;
+  padding: 4% 0 4% 0;
+}
+
+.job_container h1 {
+  color: var(--black);
+}
+
+.job_container p {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Hero section */
+  .Hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0%;
+  }
+
+  .Hero_container {
+    padding-bottom: 4%;
+  }
+
+  .job_container {
+    padding: 2% 0 2% 0;
+    line-height: 50px;
+  }
+
+  .job_container p {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .job_container p {
+    font-size: 36px;
+  }
+}

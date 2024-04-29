@@ -1,0 +1,49 @@
+.Hero_background {
+    width: 100%;
+    height: 90vh;
+    background-color: hotpink;
+    display: flex; 
+}
+
+.Hero_background article {
+    width: 60%;
+    height: 100%;
+    background-color: honeydew;
+}
+
+.Hero_background aside {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: var(--DarkGreen);
+}
+
+/* Color boxes */
+.Color_box {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .Color_box:nth-child(1) {
+    background-color: var(--LightGreen);
+    border-top-left-radius: 75%;
+  }
+
+  .Color_box:nth-child(2) {
+    background-color: var(--cream);
+    border-bottom-right-radius: 75%;
+  }
+
+  .Color_box:nth-child(3) {
+    background-color: var(--GhostPeber);
+    border-bottom-left-radius: 75%;
+  }
+  .Color_box:nth-child(4) {
+    background-color: var(--LightGreen);
+    border-bottom-right-radius: 75%;
+  }
+  .Color_box:nth-child(5) {
+    background-color: var(--cream);
+    border-top-right-radius: 75%;
+  }

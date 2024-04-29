@@ -1,0 +1,140 @@
+.case_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project_wrapper {
+  position: relative;
+  text-align: start;
+  width: 100%;
+  padding: 4%;
+}
+
+.project_info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.projectwork_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4%;
+}
+
+.project_kasse {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
+.SecondT {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  padding: 4% 0% 0% 0%;
+  /* background-color: royalblue; */
+}
+
+.text-kasser {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #999;
+  padding-bottom: 4%;
+  
+}
+
+.extra-text-kasse {
+  font-size: 15px;
+  color: #999;
+  /* color: var(--black); */
+}
+
+.mockup_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4%;
+
+  /* background-color: slateblue; */
+  background-color: var(--LightGrey);
+}
+
+#mockup_image_one {
+  height: 300px;
+  width: 375px;
+}
+
+#mockup_image {
+  height: 300px;
+  width: 375px;
+}
+
+@media screen and (min-width: 360px) {
+
+  #mockup_image_one {
+    height: 300px;
+    width: 360px;
+  }
+  
+  #mockup_image {
+    height: 300px;
+    width: 360px;
+  }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .project_wrapper {
+    width: 80%;
+    padding: 0%;
+  }
+
+  .projectwork_container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0% 2% 0%;
+    gap: 4%;
+  }
+
+  .project_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #mockup_image_one {
+    height: 400px;
+    width: 600px;
+  }
+
+  #mockup_image {
+    height: 60%;
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #mockup_image_one {
+    height: 60%;
+    width: 820px;
+  }
+
+  #mockup_image {
+    height: 60%;
+    width: 850px;
+  }
+}

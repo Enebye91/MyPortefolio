@@ -1,0 +1,175 @@
+.W_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Work_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+
+.Work_wrapper_article {
+  display: flex;
+}
+
+#arrow_container {
+  width: 30%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#arrow-image {
+  height: 20px;
+  transform: rotate(45deg);
+}
+
+.work-text {
+  height: auto;
+  text-align: start;
+  padding-bottom: 6%;
+}
+
+.work_container_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box {
+  border: 1px solid #999;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.1)); 
+  text-align: center;
+  width: auto;
+  height: 200px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.text-box {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 2%;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.image-box {
+  height: 75%;
+  position: relative;
+}
+
+.portfolio-image {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (min-width: 460px) {
+  .work_container_wrapper {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  #arrow_container {
+    width: 15%;
+  }
+
+  #arrow-image {
+    height: 30px;
+  }
+
+  .work_container_wrapper {
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+  }
+
+   .work-text {
+    padding-left: 6%;
+  }
+
+  .box {
+    text-align: center;
+    width: 90%;
+    height: 300px;
+  }
+}
+
+/* PC */
+
+@media screen and (min-width: 912px) {
+  .W_wrapper {
+    align-items: center;
+  }
+
+  .Work_wrapper {
+    width: 90%;
+    flex-direction: row;
+    gap: 2%;
+    padding-bottom: 6%;
+  }
+
+  .Work_wrapper_article {
+    width: 45%;
+  }
+
+  #arrow_container {
+    width: 35%;
+  }
+
+  /* .work-text {
+    background-color: lawngreen;
+  } */
+
+  .work_container_wrapper {
+    width: 55%;
+  }
+
+  .box {
+    text-align: center;
+    width:95%;
+    height: 200px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .Work_wrapper {
+    width: 85%;
+  }
+
+  .work_container {
+    order: 2; 
+  }
+
+  #arrow_container {
+    width: 25%;
+  }
+
+  .Work_wrapper_article {
+    width: 50%;
+  }
+
+  .work_container_wrapper {
+    width: 50%;
+  }
+
+  .box {
+    height: 300px;
+    
+  }
+}

@@ -1,0 +1,165 @@
+.Outer_circle:hover {
+    animation: animate 0.6s;
+  }
+  
+  @keyframes animate {
+    25% {
+      transform: scale(0.8, 1.3);
+    }
+  
+    50% {
+      transform: scale(1.1, 0.8);
+    }
+  }
+  
+  .Outer_circle.expanded {
+    animation: jellyEffect 0.3s ease; /* Tilføj geléeffekt-animation, når cirklen klikkes */
+  }
+  
+  @keyframes jellyEffect {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .clickText {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .Circle_wrapper {
+    position: relative; /* Sørg for relativ positionering */
+    width: 100%;
+    height: 200px;
+  
+  }
+  
+  .Circle_container {
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+  }
+  
+  /* New section styling */
+  .Newer_section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top: 40vh;
+    padding: 4%;
+    background: almond;
+    /* background-color: #faf3e0; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Newer_section.expanded {
+    max-height: 1000px; /* Juster maksimal højde efter behov */
+  }
+  
+  .Navigation_wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-row-gap: 2vh;
+    grid-column-gap: 2vh;
+    padding-top: 6%;
+  }
+  
+  .Navigation_wrapper div {
+    width: 100%;
+    text-align: start;
+  }
+  
+  /* star image*/
+  #flowers {
+    width: 75px;
+    height: 75px;
+  }
+  
+  /* Links text */
+  .contact-text {
+    color: black;
+    margin-left: 10%;
+    font-size: 16px; /* Standard skriftstørrelse */
+  }
+  
+  .Hit_me_up_wrapper,
+  .Footer {
+    padding: 4%;
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    .Newer_section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0%;
+    }
+  
+    .Navigation_wrapper {
+      width: 65%;
+      grid-row-gap: 5vh;
+      grid-column-gap: 5vh;
+    }
+  
+    .Newer_section {
+      margin-top: 24vh;
+    }
+  
+    .contact-text {
+      font-size: 20px; /* Juster skriftstørrelsen for tablets */
+    }
+  
+    /* star image*/
+    #stars {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .Hit_me_up_wrapper,
+    .Footer {
+      padding: 0%;
+    }
+  }
+  
+  /* PC */
+  @media screen and (min-width: 1024px) {
+    .Circle_wrapper {
+      padding: 0% 20% 0% 20%;
+    }
+  
+    .Newer_section {
+      margin-top: 30vh;
+    }
+  
+    .contact-text {
+      font-size: 45px; /* Juster skriftstørrelsen for tablets */
+    }
+  
+    .Next_section {
+      width: 65%;
+      height: auto;
+      z-index: 1;
+      margin-top: 10vh; /* Juster dette efter behov */
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

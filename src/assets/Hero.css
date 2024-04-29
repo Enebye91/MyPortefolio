@@ -1,0 +1,43 @@
+.Hero {
+    width: 100%;
+    padding: 6%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light);
+    position: relative;
+    /* background-color: var(--cream); */
+  }
+  
+  .Hero_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .Hero_btn {
+    width: 100%;
+    display: flex;
+    gap: 4%;
+  }
+  
+  .Hero_btn button {
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background: #34c297;
+    background-color: rgb(250, 243, 224), 0.5;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    max-width: 150px;
+    height: 6vh;
+  }
+  
+  .Hero_btn button a {
+    text-decoration: none;
+  }
+  

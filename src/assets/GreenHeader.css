@@ -1,0 +1,4 @@
+h2 {
+    font-size: clamp(12px, 4vh, 32px);
+    color: #233c40;
+  }
