@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import "../src/assets/ExtendButton.css";
+import "../assets/ExtendButton.css";
 import Paragraf from "../Components/Paragraf";
 import ContactSection from "../Components/ContactSection";
 import Footer from "../Components/Footer";
@@ -21,7 +21,8 @@ export default function CircleButton() {
   return (
     <section className="CircleBTN_wrapper">
       <article>
-        <button className={showSection ? "expanded" : ""}
+        <button
+          className={showSection ? "expanded" : ""}
           style={{
             margin: "20px",
             borderRadius: "50%",
@@ -34,10 +35,9 @@ export default function CircleButton() {
             width: "100px",
             maxWidth: "150px",
             height: "100px",
-            filter: "drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.2))",
+            filter: "drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.2))"
           }}
-          onClick={toggleSection}
-        >
+          onClick={toggleSection}>
           More
         </button>
       </article>

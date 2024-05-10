@@ -1,4 +1,4 @@
-import "../src/assets/BigParagraf.css";
+import "../assets/BigParagraf.css";
 
 export default function BigParagraf(props) {
   return (

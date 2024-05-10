@@ -1,4 +1,4 @@
-import "../src/assets/Hero.css";
+import "../assets/Hero.css";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
 
         <div className="Hero_btn">
-          <button >Explore</button>
+          <button>Explore</button>
           <button>Contact</button>
         </div>
       </article>

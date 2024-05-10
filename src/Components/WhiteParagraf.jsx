@@ -1,4 +1,4 @@
-import "../src/assets/paragraf.css";
+import "../assets/paragraf.css";
 
 export default function WhiteParagraf(props) {
   return (

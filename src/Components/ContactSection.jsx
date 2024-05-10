@@ -1,6 +1,6 @@
-import "../src/assets/ContactSection.css";
+import "../assets/ContactSection.css";
 import BigParagraf from "./BigParagraf";
-import portraet from "../src/images/portraet.jpg";
+import portraet from "../assets/images/portraet.jpg";
 
 export default function ContactSection() {
   return (
@@ -24,7 +24,7 @@ export default function ContactSection() {
             <a href="mailto:michellevel91@gmail.com">michellevel91@gmail.com</a>
           </button>
           <button className="kontact">
-          <a href="tel:+4520617459">+45 20 61 74 59</a>
+            <a href="tel:+4520617459">+45 20 61 74 59</a>
           </button>
         </div>
       </aside>

@@ -1,4 +1,4 @@
-// import "../src/assets/OverskriftThree.css";
+// import "../assets/OverskriftThree.css";
 
 // export default function OverskriftThree(props) {
 //   return (
@@ -11,9 +11,9 @@
 // }
 
 import { useState, useEffect } from "react";
-import "../src/assets/OverskriftThree.css";
+import "../assets/OverskriftThree.css";
 
-const OverskriftThree = (props) => {
+const OverskriftThree = props => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

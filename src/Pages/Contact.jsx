@@ -1,5 +1,5 @@
 import Nav from "../Components/NavBar";
-import "../src/assets/Contact.css";
+import "../assets/Contact.css";
 import Overskrift from "../Components/Overskrift";
 import OverskriftTo from "../Components/OverskriftTo";
 import Paragraf from "../Components/Paragraf";
@@ -46,7 +46,7 @@ export default function Contact() {
           </div>
         </aside>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

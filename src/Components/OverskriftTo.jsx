@@ -1,4 +1,4 @@
-// import "../src/assets/OverskriftTo.css";
+// import "../assets/OverskriftTo.css";
 
 // export default function OverskriftTo(props) {
 //   return (
@@ -11,9 +11,9 @@
 // }
 
 import { useState, useEffect } from "react";
-import "../src/assets/OverskriftTo.css";
+import "../assets/OverskriftTo.css";
 
-const OverskriftTo = (props) => {
+const OverskriftTo = props => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -29,4 +29,3 @@ const OverskriftTo = (props) => {
 };
 
 export default OverskriftTo;
-

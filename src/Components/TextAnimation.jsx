@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import "../src/assets/TextAnimation.css";
+import "../assets/TextAnimation.css";
 
 const TextAnimation = () => {
   const [textIndex, setTextIndex] = useState(0);
   const texts = ["Hi", "It's me."];
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+      setTextIndex(prevIndex => (prevIndex + 1) % texts.length);
     }, 1500);
 
     return () => clearInterval(intervalId);
