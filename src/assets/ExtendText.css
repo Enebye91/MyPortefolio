@@ -45,8 +45,7 @@
   width: 100%;
   height: auto;
   z-index: 1;
-  margin-top: 70vh;
-  padding: 0% 0% 1% 0%;
+  margin-top: 45vh;
   display: flex;
   flex-direction: column;
   transition: opacity 0.5s ease;
@@ -57,7 +56,7 @@
 }
 
 .New_section.expanded {
-  max-height: 1500px; /* Juster maksimal højde efter behov */
+  max-height: 1500px;
 }
 
 .Navigation_wrapper {

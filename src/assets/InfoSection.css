@@ -1,5 +1,6 @@
 /* info boxes */
 .info_wrapper {
+  height: 100%;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   background-color: var(--DarkGreen);
@@ -12,10 +13,11 @@
 .info_wrapper {
   width: 100%;
   display: flex;
-  background: linear-gradient(#262626, transparent),
+  /* background: linear-gradient(#262626, transparent),
     linear-gradient(to top left, #1a1a1a transparent),
-    linear-gradient(to top right, #403f3f, transparent);
+    linear-gradient(to top right, #403f3f, transparent); */
   background-blend-mode: screen;
+  padding-bottom: 10%;
 }
 
 .info_container {
@@ -24,19 +26,17 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* padding-top: 6%; */
 }
 
 .content_article,
 .content_aside {
-  height: 200px;
+  height: 300px;
   flex: 1 1 45%;
   margin: 10px;
   display: flex;
   flex-direction: column;
   text-align: start;
   padding: 2%;
-  
 }
 
 /*article efter den første article*/
@@ -54,6 +54,12 @@
   width: 100px;
 }
 
+@media screen and (min-width: 486px) {
+  .content_article,
+  .content_aside {
+    height: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   /* Info section */
   .info_wrapper {

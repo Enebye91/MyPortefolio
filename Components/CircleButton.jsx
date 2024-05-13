@@ -2,9 +2,6 @@ import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../src/assets/CircleButton.css";
 
-// import flower from "../src/images/flower.svg";
-// import Footer from "../Components/Footer";
-
 export default function CircleWithSection() {
   const [showSection, setShowSection] = useState(false);
   const sectionRef = useRef(null);
@@ -47,8 +44,6 @@ function SectionToShow({ sectionRef }) {
             <li>
               <Link to="About">
                 <div style={{ display: "flex", alignItems: "center" }}>
-                 
-
                   <div className="contact-text">About</div>
                 </div>
               </Link>
@@ -60,8 +55,6 @@ function SectionToShow({ sectionRef }) {
             <li>
               <Link to="Portfolio">
                 <div style={{ display: "flex", alignItems: "center" }}>
-                  
-
                   <div className="contact-text">Portfolio</div>
                 </div>
               </Link>
@@ -73,8 +66,6 @@ function SectionToShow({ sectionRef }) {
             <li>
               <Link to="Contact">
                 <div style={{ display: "flex", alignItems: "center" }}>
-                  {/* <Circle /> */}
-
                   <div className="contact-text">Contact</div>
                 </div>
               </Link>

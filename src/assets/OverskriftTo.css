@@ -1,6 +1,10 @@
+
+
 h2 {
   color: var(--cream);
   font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
   /* font-size: clamp(2.5rem, 6rem, 5rem); */
 }
 
@@ -10,7 +14,7 @@ h2 {
 }
 
 .overskriftTo-container.fade-in {
-  opacity: 1; /* Vis overskriften med fuld opacity */
+  opacity: 1; /* Viser overskriften med fuld opacity */
 }
 
 @media screen and (min-width: 768px) {

@@ -5,7 +5,13 @@
   overflow-x: hidden;
   transform-style: preserve-3d;
   position: sticky;
-  top: 0; 
+  top: 0;
+}
+
+.Logo_span,
+.logo {
+  text-decoration: none;
+  color: var(--DarkGreen);
 }
 
 .links {
@@ -87,14 +93,19 @@ ul {
 }
 
 .menu {
-  max-width: 95rem;
-  width: 86%;
+  /* max-width: 95rem; */
+  /* width: 86%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1rem; */
+  padding: 0rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--DarkGreen);
+}
+
+.links span {
+  text-decoration: none;
 }
 
 .logo {

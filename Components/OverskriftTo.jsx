@@ -1,15 +1,3 @@
-// import "../src/assets/OverskriftTo.css";
-
-// export default function OverskriftTo(props) {
-//   return (
-//     <>
-//       <div id="">
-//         <h2>{props.overskriftTo}</h2>
-//       </div>
-//     </>
-//   );
-// }
-
 import { useState, useEffect } from "react";
 import "../src/assets/OverskriftTo.css";
 

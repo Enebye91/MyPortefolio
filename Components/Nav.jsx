@@ -13,9 +13,11 @@ const Navbar = () => {
     <div className={`container ${menuOpen ? "aktiv" : ""}`}>
       <div className="navbar">
         <div className="menu">
-          <h3 className="logo">
-            VEL<span>Design</span>
-          </h3>
+          <Link to="/LandingPage" className="Logo_span">
+            <h3 className="logo">
+              VEL<span>Design</span>
+            </h3>
+          </Link>
           <div className="hamburger-menu" onClick={toggleMenu}>
             <div className="bar"></div>
           </div>
@@ -25,7 +27,11 @@ const Navbar = () => {
       <div className={`links ${menuOpen ? "menu-open" : ""}`}>
         <ul>
           <li>
-            <Link to="" style={{ "--i": "0.05s" }} onClick={toggleMenu}>
+            <Link
+              to="/LandingPage"
+              style={{ "--i": "0.05s" }}
+              onClick={toggleMenu}
+            >
               Home
             </Link>
           </li>
@@ -42,11 +48,11 @@ const Navbar = () => {
             >
               Portfolio
             </Link>
-            <li>
-              <Link to="Case" style={{ "--i": "0.10s" }} onClick={toggleMenu}>
+            {/* <li>
+              <Link to="/Case" style={{ "--i": "0.10s" }} onClick={toggleMenu}>
                 Cases
               </Link>
-            </li>
+            </li> */}
           </li>
         </ul>
       </div>

@@ -44,13 +44,16 @@ const InfoSection = () => {
           <OverskriftThree overskriftThree="Webdevelopment" />
           <p
             style={{
+              fontweight: "400",
               fontSize: "18px",
+              letterSpacing: "1px",
               color: "var(--cream)",
             }}
           >
+            
             Design and implementation of websites and web applications. I focus
-            on creating user-friendly and responsive interfaces with speed
-            optimization and security in mind.
+            on creating user-friendly and responsive interfaces with micro
+            animation and interaction.
           </p>
         </article>
         <aside className="content_aside" style={{ backgroundColor: "" }}>
@@ -62,6 +65,9 @@ const InfoSection = () => {
               color: "var(--cream)",
             }}
           >
+            Bringing websites and applications to life through interactivity and
+            dynamic features paved the way for me to pursue a path in
+            Frontend development.
             Responsive design and interactivity are essential elements for
             creating an engaging and user-friendly experience.
           </p>
@@ -74,9 +80,10 @@ const InfoSection = () => {
               color: "var(--cream)",
             }}
           >
-            Bringing websites and applications to life through interactivity and
-            dynamic features paved the way for me to pursue a path in
-            Webdevelopment.
+            When it comes to developing smart solutions for creating interactive 
+            and immersive web experiences, integrating Unity to produce 3D visualizations 
+            that can be run directly in the web browser is beneficial.
+    
           </p>
         </aside>
       </div>

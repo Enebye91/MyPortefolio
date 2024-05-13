@@ -1,6 +1,5 @@
 import Navigation from "../Components/Nav";
 import TextAnimation from "../Components/TextAnimation";
-// import Mijo from "../src/images/Mijo.png";
 import CircleButton from "../Components/CircleWithSection";
 import Paragraf from "../Components/Paragraf";
 import "../src/assets/Landingpage.css";
@@ -27,9 +26,6 @@ export default function LandingPage() {
             <CircleButton />
           </div>
         </article>
-        {/* <div>
-          <img src={Mijo} alt="mockupImage" id="mijo" />
-        </div> */}
       </section>
     </>
   );

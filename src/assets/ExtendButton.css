@@ -1,4 +1,4 @@
-.Circle_wrapper button:hover {
+.CircleBTN_wrapper button:hover {
   animation: animate 0.6s;
 }
 
@@ -12,7 +12,7 @@
   }
 }
 
-.Circle_wrapper button.expanded {
+.CircleBTN_wrapper button.expanded {
   animation: jellyEffect 0.3s ease; /* Tilføj geléeffekt-animation, når cirklen klikkes */
 }
 
@@ -28,36 +28,35 @@
   }
 }
 
-.Circle_wrapper {
+.CircleBTN_wrapper {
   width: 100%;
 }
 
-.Circle_wrapper article {
+.CircleBTN_wrapper article {
   width: 100%;
   display: flex;
 }
 
 /* New section styling */
-.New_section {
+.Newest_section {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
   z-index: 1;
-  margin-top: 40vh; /* Juster dette efter behov */
-  padding: 4%;
+  margin-top: 60vh; /* Juster dette efter behov */
   display: flex;
   flex-direction: column;
   transition: opacity 0.5s ease;
 }
 
-.New_section.fade-in {
+.Newest_section.fade-in {
   opacity: 1;
 }
 
-.New_section.expanded {
-  max-height: 1000px; /* Juster maksimal højde efter behov */
+.Newest_section.expanded {
+  max-height: 1000px;
 }
 
 .Navigation_wrapper {
@@ -101,12 +100,10 @@
 
 .teas_container article {
   width: 100%;
- 
 }
 
 .teas_container aside {
   width: 100%;
-
 }
 
 @media screen and (min-width: 412px) {
@@ -117,21 +114,18 @@
 }
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .New_section {
+  .Newest_section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0%;
+    margin-top: 50vh;
   }
 
   .Navigation_wrapper {
     width: 65%;
     grid-row-gap: 5vh;
     grid-column-gap: 5vh;
-  }
-
-  .New_section {
-    margin-top: 50vh;
   }
 
   .Hit_me_up_wrapper,
@@ -153,8 +147,8 @@
 
 /* PC */
 @media screen and (min-width: 1024px) {
-  .New_section {
-    margin-top: 110vh;
+  .Newest_section {
+    margin-top: 70vh;
   }
 
   .info_container {
@@ -173,9 +167,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-
   .teas_container {
     width: 75%;
   }
-
 }
