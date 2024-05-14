@@ -1,4 +1,4 @@
-import "../src/assets/GreenHeader.css";
+import "../assets/GreenHeader.css";
 
 export default function GreenHeader(props) {
   return (

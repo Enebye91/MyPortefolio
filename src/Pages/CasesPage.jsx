@@ -1,11 +1,11 @@
 import Navigation from "../Components/Nav";
 import Footer from "../Components/Footer";
 import Paragraf from "../Components/Paragraf";
-import mockup from "../src/images/Mock.png";
-import mockupImage from "../src/images/MocupImage.png";
-import "../src/assets/Case.css";
+import mockup from "../assets/images/Mock.png";
+import mockupImage from "../assets/images/MocupImage.png";
+import "../assets/Case.css";
 
-export default function Case() {
+export default function Cases() {
   const numRows = 1;
   const numColumns = 3;
 
@@ -22,7 +22,6 @@ export default function Case() {
         const text3 = textsArray[index][2];
         const extraText = extraTextsArray[index];
 
-    
         const extraTextContent = Array.isArray(extraText)
           ? extraText[0].props.paragraf
           : extraText;
@@ -52,31 +51,30 @@ export default function Case() {
   const texts = [
     [<Paragraf paragraf="Service " />, <Paragraf paragraf="" />],
     [<Paragraf paragraf="Credits" />, <Paragraf paragraf="" />],
-    [<Paragraf paragraf=" Year" />, <Paragraf paragraf="" />],
+    [<Paragraf paragraf=" Year" />, <Paragraf paragraf="" />]
   ];
 
   // Ekstra tekst til at indsætte i kasserne
   const extraTexts = [
     [
       <Paragraf paragraf="Multimedia final project" />,
-      <Paragraf paragraf="UI/UX & webdevelopment " />,
+      <Paragraf paragraf="UI/UX & webdevelopment " />
     ],
     "Photography: Louise Buch Photography",
-    "2023",
+    "2023"
   ];
 
   const boxesWithText = generateBoxesWithText(texts, extraTexts);
 
   return (
     <>
-     <Navigation/>
+      <Navigation />
       <section className="case_wrapper">
         <article className="project_wrapper">
           <h1
             style={{
-              color: "var(--black)",
-            }}
-          >
+              color: "var(--black)"
+            }}>
             Stald Schwartz
           </h1>
         </article>

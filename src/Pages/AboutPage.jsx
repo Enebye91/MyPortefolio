@@ -1,14 +1,15 @@
 import Nav from "../Components/NavBar";
-import "../src/assets/About.css";
+// import Navigation from "../Components/Nav";
+import "../assets/About.css";
 import OverskriftTo from "../Components/OverskriftTo";
 import ExtendText from "../Components/ExtendText";
-
 
 export default function About() {
   return (
     <>
       <section>
         <Nav />
+        {/* <Navigation /> */}
       </section>
       <section id="om_wrapper">
         <article id="om_article">

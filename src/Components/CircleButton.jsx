@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../src/assets/CircleButton.css";
+import "../assets/CircleButton.css";
 
 export default function CircleWithSection() {
   const [showSection, setShowSection] = useState(false);

@@ -1,11 +1,11 @@
 import Navigation from "../Components/Nav";
 import Paragraf from "../Components/Paragraf";
-import rightarrow from "../src/images/rightarrow.png";
+import rightarrow from "../assets/images/rightarrow.png";
 import ContactSection from "../Components/ContactSection";
 import Footer from "../Components/Footer";
-import Stald from "../src/images/StaldS.png";
-import { Link } from "react-router-dom";
-import "../src/assets/PortfolioPage.css";
+import Stald from "../assets/images/StaldS.png";
+// import { Link } from "react-router-dom";
+import "../assets/PortfolioPage.css";
 
 export default function Portfolio() {
   const numRows = 2;
@@ -24,23 +24,24 @@ export default function Portfolio() {
         const imagePath = imagePathsArray[index];
 
         boxes.push(
+          // <Link to={`../Pages/CasePage/${index}`} key={index}>
+
           <div className="box" key={index}>
             {/* Kasse med første tekst */}
-            <Link to="/Case" className="link-style">
-              <div className="inner_box text-box">
-                {" "}
-                <span className="first-text">{text1}</span>
-                <span className="second-text">{text2}</span>
-              </div>
-            </Link>
+            <div className="inner_box text-box">
+              <span className="first-text">{text1}</span>
+              {/* <span className="first-text">
+                <Link to={`../Pages/CasePage${index}`}>{text1}</Link>
+              </span> */}
+              <span className="second-text">{text2}</span>
+            </div>
 
             {/* Kasse med billede */}
-            <Link to="/Case">
-              <div className="inner_box image-box">
-                <img className="portfolio-image" src={imagePath} />
-              </div>
-            </Link>
+            <div className="inner_box image-box">
+              <img className="portfolio-image" src={imagePath} />
+            </div>
           </div>
+          // </Link>
         );
       }
     }
@@ -50,11 +51,11 @@ export default function Portfolio() {
   // Tekst til at indsætte i kasserne
   const texts = [
     [<Paragraf paragraf="Stald Schwartz " />, "1"],
-    [<Paragraf paragraf=" " />, "2"],
+    [<Paragraf paragraf=" " />, "2"]
   ];
 
   const imagePaths = [
-    Stald,
+    Stald
     // Tilføj flere billedstier efter behov
   ];
 
@@ -109,17 +110,6 @@ export default function Portfolio() {
 
   // // Generer andet grid med den givne funktion og tekst-arrayet
   // const secondGrid = generateSecondGrid(secondGridTexts, secondGridImagePaths);
-
-  // Lyt efter scrollevent
-  window.addEventListener("scroll", function () {
-    var arrowContainer = document.getElementById("arrow_container");
-
-    if (window.scrollY > 0) {
-      arrowContainer.classList.add("rotated");
-    } else {
-      arrowContainer.classList.remove("rotated");
-    }
-  });
 
   return (
     <>

@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from "react";
-import "../src/assets/ExtendButton.css";
+import "../assets/ExtendText.css";
 import InfoSection from "../Components/InfoSection";
 import Footer from "../Components/Footer";
 
-export default function ExtendButton() {
+export default function ExtendText() {
   const [showSection, setShowSection] = useState(false);
   const sectionRef = useRef(null);
 
@@ -18,25 +18,19 @@ export default function ExtendButton() {
   }, [showSection]);
 
   return (
-    <section className="Circle_wrapper">
+    <section className="TextBtn_wrapper">
       <article>
         <button
           style={{
-            marginBottom: "10px",
-            borderRadius: "50px",
-            backgroundColor: "var(--black)",
-            color: "#fff",
+            background: "transparent",
             border: "none",
-            cursor: "pointer",
-            textDecoration: "none",
-            textAlign: "center",
-            width: "100%",
-            maxWidth: "150px",
-            height: "6vh",
+            textDecoration: "underline",
+            fontSize: "20px",
+            color: "var(--cream)",
+            cursor: "pointer"
           }}
-          onClick={toggleSection}
-        >
-         Read more
+          onClick={toggleSection}>
+          Read more about me
         </button>
       </article>
 
@@ -50,9 +44,8 @@ function SectionToShow({ sectionRef }) {
     <div>
       <section className="New_section" ref={sectionRef}>
         <InfoSection />
-        <Footer/>
+        <Footer />
       </section>
-     
     </div>
   );
 }

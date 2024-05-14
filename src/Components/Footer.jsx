@@ -1,4 +1,4 @@
-import "../src/assets/Footer.css";
+import "../assets/Footer.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -35,8 +35,7 @@ const Footer = () => {
             <li>
               <a
                 href="https://www.linkedin.com/in/michelle-v-johansen
-"
-              >
+">
                 Linkedin
               </a>
             </li>
