@@ -14,75 +14,6 @@ li a {
   color: var(--cream);
 }
 
-/* .nav {
-  padding: 2rem 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  font-size: 18px;
-  width: 100%;
-  background-color: var(--DarkGreen);
-} */
-
-/* .nav_menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 3rem;
-  font-size: 20px;
-  background-color: pink;
-}
-
-.nav_toggler div {
-  width: 2.5rem;
-  height: 0.2rem;
-  margin: 0.4rem;
-  background: var(--cream);
-  transition: 0.3s ease-in;
-}
-
-.nav_toggler {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .nav_toggler {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav_menu {
-    position: fixed;
-    top: -0.5vh;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--DarkGreen);
-    gap: 1px;
-    flex-direction: column;
-    transform: translateY(-100%);
-    transition: 0.5s ease-in;
-  }
-
-  .nav_toggler div {
-    background: white;
-  }
-}
-
-.nav_active {
-  transform: translateX(0%);
-}
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-6px, -6px);
-} */
-
 .nav-container {
   min-height: 10vh;
   width: 100%;
@@ -125,7 +56,6 @@ ul {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--OffWhite);
   padding: 0.7rem 0;
   display: inline-block;
   font-size: 18px;
@@ -138,30 +68,12 @@ ul {
   animation: hideAnimation 0.5s forwards ease;
 }
 
-.nav-container.active .nav-links a {
-  animation: showAnimation 0.5s forwards ease var(--delay);
+.nav-links a:hover {
+  color: var(--LightGreen);
 }
 
-@keyframes showAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes hideAnimation {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(10px);
-  }
+.nav-container .nav-links a {
+  animation: showAnimation 0.5s forwards ease var(--i);
 }
 
 .nav_bar {
@@ -173,7 +85,7 @@ ul {
   padding-bottom: 6%;
 }
 
-.menu-bar {
+.menu {
   max-width: 95rem;
   width: 86%;
   margin: 0 auto;
@@ -199,7 +111,7 @@ ul {
   font-weight: 300;
 }
 
-.hamburger-menu {
+.burger-menu {
   height: 4rem;
   width: 3rem;
   cursor: pointer;

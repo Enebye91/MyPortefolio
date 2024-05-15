@@ -54,7 +54,7 @@ ul {
 }
 
 .links a:hover {
-  color: #fff;
+  color: var(--LightGreen);
 }
 
 .container.aktiv .links a {

@@ -2,41 +2,53 @@ import { Link } from "react-router-dom";
 import "../assets/Nav.css";
 import { useState } from "react";
 
-export default function Nav() {
-  const [active, setActive] = useState("nav_menu");
-  const [icon, setIcon] = useState("nav_toggler");
-  const navToggle = () => {
-    if (active === "nav_menu") {
-      setActive("nav_menu nav_active");
-    } else setActive("nav_menu");
+const Nav = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    if (icon === "nav_toggler") {
-      setIcon("nav_toggler toggle");
-    } else setIcon("nav_toggler");
+  const Menu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
-    <>
-      <nav className="nav">
-        <img src="" alt="" className="logo" />
-        <ul className={active}>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          {/* <li>
-            <Link to="/contact">Contact</Link>
-          </li> */}
-        </ul>
-
-        <div onClick={navToggle} className={icon}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
+    <div className={`nav-container ${menuOpen ? "active" : ""}`}>
+      <div className="nav_bar">
+        <div className="menu">
+          <Link to="/LandingPage" className="logo-link">
+            <h3 className="site-logo">
+              VEL<span>Design</span>
+            </h3>
+          </Link>
+          <div className="burger-menu" onClick={Menu}>
+            <div className="menu-bar"></div>
+          </div>
         </div>
-      </nav>
-    </>
+      </div>
+
+      <div className={`nav-links ${menuOpen ? "menu-open" : ""}`}>
+        <ul>
+          <li>
+            <Link to="/LandingPage" style={{ "--i": "0.05s" }} onClick={Menu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" style={{ "--i": "0.10s" }} onClick={Menu}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/portfolio"
+              style={{ "--i": "0.15s" }}
+              onClick={Menu}>
+              Portfolio
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
-}
+};
+
+export default Nav;
+

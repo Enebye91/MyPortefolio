@@ -77,6 +77,7 @@
 /*article efter den første article*/
 .content_article ~ .content_article {
   border: 1px solid var(--cream);
+ 
 }
 
 .content_aside {
