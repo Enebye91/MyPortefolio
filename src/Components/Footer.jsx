@@ -25,8 +25,8 @@ const Footer = () => {
         <div className="kasse">
           <h7>Site map</h7>
           <ul>
-            <Link to="About">About</Link>
-            <Link to="Portfolio">Portfolio</Link>
+            <Link to="/About">About</Link>
+            <Link to="/Portfolio">Portfolio</Link>
           </ul>
         </div>
         <div className="kasse">
