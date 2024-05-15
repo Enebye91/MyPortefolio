@@ -15,10 +15,12 @@ const Footer = () => {
           <h7>Contact</h7>
           <ul>
             <li>
-            <a href="tel:+4520617459">+45 20 61 74 59</a>
+              <a href="tel:+4520617459">+45 20 61 74 59</a>
             </li>
             <li>
-            <a href="mailto:michellevel91@gmail.com">michellevel91@gmail.com</a>
+              <a href="mailto:michellevel91@gmail.com">
+                michellevel91@gmail.com
+              </a>
             </li>
           </ul>
         </div>
@@ -35,7 +37,8 @@ const Footer = () => {
             <li>
               <a
                 href="https://www.linkedin.com/in/michelle-v-johansen
-">
+"
+              >
                 Linkedin
               </a>
             </li>
