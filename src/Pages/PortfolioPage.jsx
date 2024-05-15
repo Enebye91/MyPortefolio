@@ -34,9 +34,11 @@ export default function Portfolio() {
             </Link>
 
             {/* Kasse med billede */}
-            <div className="inner_box image-box">
-              <img className="portfolio-image" src={imagePath} />
-            </div>
+            <Link to="/CasesPage" className="Link">
+              <div className="inner_box image-box">
+                <img className="portfolio-image" src={imagePath} />
+              </div>
+            </Link>
           </div>
         );
       }
@@ -50,9 +52,7 @@ export default function Portfolio() {
     [<Paragraf paragraf=" " />, "2"],
   ];
 
-  const imagePaths = [
-    Stald,
-  ];
+  const imagePaths = [Stald];
 
   // Generer kasser med den givne tekst og billedstier
   const boxesWithTextAndImages = generateBoxesWithTextAndImages(
