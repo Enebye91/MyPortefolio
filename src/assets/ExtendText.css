@@ -76,12 +76,11 @@
 
 /*article efter den første article*/
 .content_article ~ .content_article {
-  border: 1px solid var(--cream);
- 
+  border: 1px solid var(--cream) !important;
 }
 
 .content_aside {
-  border: 1px solid var(--cream);
+  border: 1px solid var(--cream) !important;
 }
 
 @media screen and (min-width: 455px) {
