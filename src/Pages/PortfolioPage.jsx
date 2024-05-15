@@ -26,7 +26,7 @@ export default function Portfolio() {
         boxes.push(
           <div className="box" key={index}>
             {/* Kasse med første tekst */}
-            <Link to="/CasesPage">
+            <Link to="/CasesPage" className="Link">
               <div className="inner_box text-box">
                 <span className="first-text">{text1}</span>
                 <span className="second-text">{text2}</span>
