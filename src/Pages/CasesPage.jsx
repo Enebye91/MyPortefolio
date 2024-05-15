@@ -51,17 +51,17 @@ export default function Cases() {
   const texts = [
     [<Paragraf paragraf="Service " />, <Paragraf paragraf="" />],
     [<Paragraf paragraf="Credits" />, <Paragraf paragraf="" />],
-    [<Paragraf paragraf=" Year" />, <Paragraf paragraf="" />]
+    [<Paragraf paragraf=" Year" />, <Paragraf paragraf="" />],
   ];
 
   // Ekstra tekst til at indsætte i kasserne
   const extraTexts = [
     [
       <Paragraf paragraf="Multimedia final project" />,
-      <Paragraf paragraf="UI/UX & webdevelopment " />
+      <Paragraf paragraf="UI/UX & webdevelopment " />,
     ],
     "Photography: Louise Buch Photography",
-    "2023"
+    "2023",
   ];
 
   const boxesWithText = generateBoxesWithText(texts, extraTexts);
@@ -73,8 +73,9 @@ export default function Cases() {
         <article className="project_wrapper">
           <h1
             style={{
-              color: "var(--black)"
-            }}>
+              color: "var(--black)",
+            }}
+          >
             Stald Schwartz
           </h1>
         </article>

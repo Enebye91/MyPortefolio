@@ -4,7 +4,7 @@ import rightarrow from "../assets/images/rightarrow.png";
 import ContactSection from "../Components/ContactSection";
 import Footer from "../Components/Footer";
 import Stald from "../assets/images/StaldS.png";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../assets/PortfolioPage.css";
 
 export default function Portfolio() {
@@ -24,24 +24,20 @@ export default function Portfolio() {
         const imagePath = imagePathsArray[index];
 
         boxes.push(
-          // <Link to={`../Pages/CasePage/${index}`} key={index}>
-
           <div className="box" key={index}>
             {/* Kasse med første tekst */}
-            <div className="inner_box text-box">
-              <span className="first-text">{text1}</span>
-              {/* <span className="first-text">
-                <Link to={`../Pages/CasePage${index}`}>{text1}</Link>
-              </span> */}
-              <span className="second-text">{text2}</span>
-            </div>
+            <Link to="/CasesPage">
+              <div className="inner_box text-box">
+                <span className="first-text">{text1}</span>
+                <span className="second-text">{text2}</span>
+              </div>
+            </Link>
 
             {/* Kasse med billede */}
             <div className="inner_box image-box">
               <img className="portfolio-image" src={imagePath} />
             </div>
           </div>
-          // </Link>
         );
       }
     }
@@ -51,12 +47,11 @@ export default function Portfolio() {
   // Tekst til at indsætte i kasserne
   const texts = [
     [<Paragraf paragraf="Stald Schwartz " />, "1"],
-    [<Paragraf paragraf=" " />, "2"]
+    [<Paragraf paragraf=" " />, "2"],
   ];
 
   const imagePaths = [
-    Stald
-    // Tilføj flere billedstier efter behov
+    Stald,
   ];
 
   // Generer kasser med den givne tekst og billedstier
