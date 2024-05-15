@@ -105,6 +105,7 @@ ul {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 4rem;
+  color: var(--LightGreen);
 }
 
 .site-logo span {

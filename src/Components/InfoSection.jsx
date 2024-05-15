@@ -33,8 +33,9 @@ const InfoSection = () => {
             backgroundColor: "transparent",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "flex-end"
-          }}>
+            justifyContent: "flex-end",
+          }}
+        >
           {/* <img src={web} alt="My Image" id="web-image" /> */}
           <OverskriftThree overskriftThree="What I do" />
         </article>
@@ -44,11 +45,13 @@ const InfoSection = () => {
           <p
             style={{
               fontSize: "18px",
-              color: "var(--cream)"
-            }}>
+              color: "var(--cream)",
+            }}
+          >
             Design and implementation of websites and web applications. I focus
-            on creating user-friendly and responsive interfaces with speed
-            optimization and security in mind.
+            on creating user-friendly and responsive interfaces. Additionally,
+            it drives me in the growing digital world to create interactive
+            digital environments.
           </p>
         </article>
         <aside className="content_aside" style={{ backgroundColor: "" }}>
@@ -57,10 +60,13 @@ const InfoSection = () => {
           <p
             style={{
               fontSize: "18px",
-              color: "var(--cream)"
-            }}>
+              color: "var(--cream)",
+            }}
+          >
             Responsive design and interactivity are essential elements for
-            creating an engaging and user-friendly experience.
+            creating an engaging and user-friendly experience. Bringing websites
+            and applications to life through interactivity and dynamic features
+            paved the way for me to pursue a path in Frontend development.
           </p>
         </aside>
         <aside className="content_aside" style={{ backgroundColor: "almond" }}>
@@ -68,11 +74,14 @@ const InfoSection = () => {
           <p
             style={{
               fontSize: "18px",
-              color: "var(--cream)"
-            }}>
-            Bringing websites and applications to life through interactivity and
-            dynamic features paved the way for me to pursue a path in
-            Webdevelopment.
+              color: "var(--cream)",
+            }}
+          >
+            Working with animations in Unity has expanded my understanding of
+            how digital experiences can be made more engaging and intuitive,
+            thereby pushing the boundaries of traditional webdesign. This
+            versatility allows for the creation of interactive content that
+            captivates users and enhances their overall experience.
           </p>
         </aside>
       </div>
